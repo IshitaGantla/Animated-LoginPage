@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated Login Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="login.css" />
+  <style>
+    /* Add responsive styles here */
+    .login_form_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login_form {
+      width: 390px;
+      padding: 0px;
+      background-color: #0c0b0b;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .input_group {
+      margin: 10px 0;
+      position: relative;
+    }
+
+    .fa {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+    }
+
+    .input_text {
+      padding-left: 30px;
+      width: 100%;
+      height: 40px;
+      border: 1px solid #242020;
+      border-radius: 5px;
+    }
+
+    .button_group {
+      text-align: center;
+    }
+
+    .fotter {
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="login_form_container">
+    <div class="login_form">
+      <h2>Login</h2>
+      <form id="login_form">
+        <div class="input_group">
+          <i class="fa fa-user"></i>
+          <input
+            type="text"
+            placeholder="Username"
+            class="input_text"
+            id="Username"
+            autocomplete="off"
+          />
+        </div>
+        <div class="input_group">
+          <i class="fa fa-unlock-alt"></i>
+          <input
+            type="password"
+            placeholder="Password"
+            class="input_text"
+            id="Password"
+            autocomplete="off"
+          />
+        </div>
+        <div class="button_group">
+            <style>
+                /* Add a border to the button */
+                button[type="submit"] {
+                  border: 2px solid rgb(22, 21, 21);
+                  background-color: transparent;
+                  color: white;
+                  padding: 10px 20px;
+                  border-radius: 0px;
+                  cursor: pointer;
+                }
+                
+                /* Change the appearance when hovering */
+                button[type="submit"]:hover {
+                  background-color: black;
+                  color: white;
+                }
+              </style>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <div class="fotter">
+        <a href="#">Forgot Password ?</a>
+        <a href="#">SignUp</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="login.js"></script>
+  
+</body>
+</html>
